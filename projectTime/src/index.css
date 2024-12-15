@@ -1,0 +1,238 @@
+#root {
+
+  margin: 0 auto;
+ 
+  text-align: center;}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+
+/* NavBar */
+.navbar {
+  background-color: #ffffff;
+  padding: 1rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:700px;
+}
+.navbar-container .link_to_login{
+  text-decoration: none;
+  margin-left:100px;
+}
+.navbar .logo a {
+  color: #333 ;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.navbar .nav-links li {
+  margin-left: 2rem;
+}
+
+.navbar .nav-links li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.navbar .nav-links li a:hover {
+  text-decoration: underline;
+}
+
+/* Coaching For Section */
+.coaching-for {
+  padding: 4rem 2rem;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.coaching-for h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.coaching-for p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Process Section */
+.process {
+  padding: 4rem 2rem;
+  background-color: #e9ecef;
+  text-align: center;
+}
+
+.process h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.process p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Coaching Packages Section */
+.coaching-packages {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.coaching-packages h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.package {
+  margin: 2rem 0;
+}
+
+.package h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.package p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cta-btn {
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+  background-color: #ff5733;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #c9411f;
+}
+
+/* Contact Section */
+.contact {
+  padding: 4rem 2rem;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+}
+
+.contact button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: #ff5733;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #c9411f;
+}
+
+
+.footer{
+ background-color: black;
+ height: 100px;
+ color: white;
+ padding: 1rem;
+ text-align: center;
+ margin-top:40px;
+}
+.alldetails{
+ margin-bottom: 40px;
+ display:flex;
+ justify-content:center;
+ align-items: center;
+ gap:10px;
+}
+
+.alldetails .btnContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:20px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.alldetails .btn{
+  border: 1px solid #ceced2;
+  background: hsl(0, 0%, 100%);
+  color: black;
+  border-radius: 8px;
+  height: 32px;
+  padding: 0 12px;
+  font-weight: 400;
+}
+.alldetails .btn:hover{
+  background-color: hsl(0, 0%, 90%, 0.5);
+  cursor: pointer;
+}
+.alldetails .btn:active{
+  background-color: hsl(0, 0%, 50%, 0.5);
+}
+
+
+
+.footerIcon{
+margin-left: 10px;
+margin-bottom: 30px;
+height: 3px;
+}
+
+
+.footersecond{
+ margin-left: 10px;
+ font-size: 15px;
+}
+.footerIcon .twit{
+  color:white;
+}

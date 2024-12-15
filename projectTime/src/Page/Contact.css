@@ -1,0 +1,47 @@
+.contactwrap{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactwrap .contactpara{
+  
+    font-size: 17px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
+   
+    display: block;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+    margin-inline-start: 300px;
+    margin-inline-end: 300px;
+    unicode-bidi: isolate;
+    
+  }
+  form textarea{
+    height: 170px;
+  }
+
+  .btn{
+    display: flex; 
+    justify-content: flex-start;
+  }
+.btn button{
+    background-color: #17181e;
+    
+}
+ .contact .contactfont{
+   
+    font-size: 45px;
+    line-height: 47px;
+    margin-bottom: 10px;
+    font-family: lora, Georgia, times new roman, serif;
+    font-weight: 700;
+
+  }
+
+ 

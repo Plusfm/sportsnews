@@ -1,0 +1,55 @@
+.aboutContainer{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap:-100px;
+    flex-wrap: wrap;
+    
+}
+
+.aboutContainer img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-top: 50px;
+}
+.author_name{
+    font-size: 33px;
+    margin: 0 0 5px;
+    color: #17181e;
+    font-family: lora, Georgia, times new roman, serif;
+    font-weight: 700;
+}
+ .author_description{
+    font-size: 16px;
+    color: rgba(23, 24, 30, .8);
+    margin-inline-start: 375px;
+    margin-inline-end: 375px;
+    text-align: center;
+}
+.author-social{
+   
+    display: flex;
+    flex-direction: row; 
+    align-items: start;
+    justify-content: center;
+    row-gap: 3px;
+    margin-bottom: 10px;
+
+
+}
+.aboutlink a{
+    text-decoration: none;
+    display:inline-block;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width:50px;
+}
+
+.aboutlink a img{
+    width: 30px;
+    height: 30px;    
+}
