@@ -14,7 +14,7 @@ const dateformat = new Intl.DateTimeFormat("en-US",options)
     const fetchNewsId = async () => {
   
       try {
-        const response = await fetch(`http://localhost:4000/content/${id}`);
+        const response = await fetch(`https://tedsports.onrender.com/content/${id}`);
         const data = await response.json();
         
         setNewData(data.content); 

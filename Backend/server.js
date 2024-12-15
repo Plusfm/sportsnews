@@ -3,6 +3,8 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const { mongoUri } = require('./config');
 const path = require('path');
+const dotenv = require('dotenv')
+dotenv.config()
 
 // route import
 const contactRouter= require('./Route/contactRoute')
@@ -14,10 +16,10 @@ const authRoutes=require('./Route/authRoutes')
 
 
 const server = express();
-const port = 4000;
+const port = process.env.PORT || 4000;
 
 
-const allowedOrigins = ['http://localhost:4000', 'http://localhost:5173'];
+const allowedOrigins = [process.env.BASE_URL, 'http://localhost:5173'];
 
 // application middleware
 // server.use(express.static(path.resolve(__dirname,'./../projectTime/dist')))

@@ -15,7 +15,7 @@ const Allnews = () => {
   useEffect(() => {
     const fetchNews = async () => {
       try {
-        const response = await fetch("http://localhost:4000/content");
+        const response = await fetch('https://tedsports.onrender.com/content');
         const data = await response.json();
         setAllData(data.contents); 
         setNewData(data.contents); 
