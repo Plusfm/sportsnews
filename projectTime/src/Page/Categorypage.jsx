@@ -14,7 +14,7 @@ const Categorypage = () => {
     const fetchNews = async () => {
       setLoading(true);
       try {
-        const response = await fetch(`http://localhost:4000/content/?category=${categoryid}`);
+        const response = await fetch(`https://tedsports.onrender.com/content/?category=${categoryid}`);
         const result = await response.json();
 
         if (result.contents) {

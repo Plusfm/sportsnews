@@ -15,7 +15,7 @@ const Grouppage = () => {
     const fetchGroupData = async () => {
       setIsLoading(true);
       try {
-        const response = await fetch(`http://localhost:4000/content/?group=${groupid}`);
+        const response = await fetch(`https://tedsports.onrender.com/content/?group=${groupid}`);
         const result = await response.json();
 
         if (isMounted && result.contents) {

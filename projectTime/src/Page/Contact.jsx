@@ -19,7 +19,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:4000/contact', formData);
+      const response = await axios.post('https://tedsports.onrender.com/contact', formData);
       console.log('Response:', response.data);
       alert(response.data.message);
       setFormData({ name: '', email: '', message: '' });

@@ -20,7 +20,7 @@ const Formpage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:4000/content', formData);
+      const response = await axios.post('https://tedsports.onrender.com/content', formData);
       console.log('Response:', response.data);
       alert(response.data.message);
       setFormData({

@@ -18,7 +18,7 @@ const Loginpage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:4000/login', formData);
+      const response = await axios.post('https://tedsports.onrender.com/login', formData);
       console.log('Response:', response.data);
       alert(response.data.message);
       if(response){

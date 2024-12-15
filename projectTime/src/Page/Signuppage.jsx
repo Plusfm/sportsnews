@@ -19,7 +19,7 @@ const Signuppage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:4000/signup', formData);
+      const response = await axios.post('https://tedsports.onrender.com/signup', formData);
       console.log('Response:', response.data);
       alert(response.data.message);
       if(response){
