@@ -33,7 +33,7 @@ const Categorypage = () => {
 
   return (
     <div>
-      <div className="container blogcontainer">
+      <div className="blogcontainer">
         <h1>{data || "Loading category..."}</h1>
         {isLoading ? (
           <p>Loading...</p>

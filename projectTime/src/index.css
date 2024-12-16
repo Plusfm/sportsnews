@@ -1,8 +1,7 @@
 #root {
-
   margin: 0 auto;
- 
-  text-align: center;}
+  text-align: center;
+}
 
 * {
   margin: 0;
@@ -24,21 +23,23 @@ body {
   margin-top: 10px;
   margin-bottom: 20px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-  
+  min-width: 1024px;
 }
 
-.navbar-container {
+.navbar .navbar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap:700px;
+  gap: 500px;
 }
-.navbar-container .link_to_login{
+
+.navbar-container .link_to_login {
   text-decoration: none;
-  margin-left:100px;
+  margin-left: 100px;
 }
+
 .navbar .logo a {
-  color: #333 ;
+  color: #333;
   text-decoration: none;
   font-size: 1.5rem;
 }
@@ -175,35 +176,35 @@ body {
   background-color: #c9411f;
 }
 
-
-.footer{
- background-color: black;
- height: 100px;
- color: white;
- padding: 1rem;
- text-align: center;
- margin-top:40px;
-}
-.alldetails{
- margin-bottom: 40px;
- display:flex;
- justify-content:center;
- align-items: center;
- gap:10px;
+.footer {
+  background-color: black;
+  height: 100px;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 40px;
 }
 
-.alldetails .btnContainer{
+.alldetails {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.alldetails .btnContainer {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap:20px;
-
+  gap: 20px;
   padding-left: 20px;
   padding-right: 20px;
 }
-.alldetails .btn{
+
+.alldetails .btn {
   border: 1px solid #ceced2;
   background: hsl(0, 0%, 100%);
   color: black;
@@ -212,27 +213,132 @@ body {
   padding: 0 12px;
   font-weight: 400;
 }
-.alldetails .btn:hover{
+
+.alldetails .btn:hover {
   background-color: hsl(0, 0%, 90%, 0.5);
   cursor: pointer;
 }
-.alldetails .btn:active{
+
+.alldetails .btn:active {
   background-color: hsl(0, 0%, 50%, 0.5);
 }
 
-
-
-.footerIcon{
-margin-left: 10px;
-margin-bottom: 30px;
-height: 3px;
+.footerIcon {
+  margin-left: 10px;
+  margin-bottom: 30px;
+  height: 3px;
 }
 
-
-.footersecond{
- margin-left: 10px;
- font-size: 15px;
+.footersecond {
+  margin-left: 10px;
+  font-size: 15px;
 }
-.footerIcon .twit{
-  color:white;
+
+.footerIcon .twit {
+  color: white;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Small screens (Mobile) */
+@media (max-width: 600px) {
+ 
+  .navbar-container {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .navbar-container .link_to_login {
+    margin-left: 0;
+  }
+  
+  .navbar .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .coaching-for, .process, .coaching-packages, .contact {
+    padding: 2rem 1rem;
+  }
+
+  .coaching-for h2, .process h2, .coaching-packages h2 {
+    font-size: 1.5rem;
+  }
+
+  .coaching-for p, .process p, .coaching-packages p, .contact p {
+    font-size: 0.9rem;
+  }
+
+  .cta-btn {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+
+  .alldetails {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* Medium screens (Tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .navbar-container {
+    flex-direction: row;
+    gap: 200px;
+  }
+
+  .navbar .nav-links {
+    flex-direction: row;
+  }
+
+  .coaching-for, .process, .coaching-packages, .contact {
+    padding: 3rem 1.5rem;
+  }
+
+  .coaching-for h2, .process h2, .coaching-packages h2 {
+    font-size: 1.75rem;
+  }
+
+  .coaching-for p, .process p, .coaching-packages p, .contact p {
+    font-size: 1rem;
+  }
+
+  .cta-btn {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+  }
+}
+
+/* Large screens (Desktop) */
+@media (min-width: 1025px) {
+  .navbar-container {
+    gap: 700px;
+  }
+
+  .coaching-for, .process, .coaching-packages, .contact {
+    padding: 4rem 2rem;
+  }
+
+  .coaching-for h2, .process h2, .coaching-packages h2 {
+    font-size: 2rem;
+  }
+
+  .coaching-for p, .process p, .coaching-packages p, .contact p {
+    font-size: 1.1rem;
+  }
+
+  .cta-btn {
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+  }
+
+  .alldetails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
 }

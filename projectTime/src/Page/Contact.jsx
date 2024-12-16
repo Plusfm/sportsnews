@@ -9,6 +9,7 @@ const Contact = () => {
     email: '',
     message: '',
   });
+  const [isloading, setIsloading] = useState(false)
  
 
   const handleChange = (e) => {
@@ -21,13 +22,25 @@ const Contact = () => {
     try {
       const response = await axios.post('https://tedsports.onrender.com/contact', formData);
       console.log('Response:', response.data);
+      setIsloading(true)
       alert(response.data.message);
-      setFormData({ name: '', email: '', message: '' });
+      if(alert){
+       const timer = setTimeout(() => {
+          setFormData({ name: '', email: '', message: '' });
+      },11000)
+     clearTimeout(()=>timer)
+    }
+      // 
     } catch (error) {
       alert('Failed to send message');
     }
   };
-
+  if (isloading){
+   const second_timer = setTimeout(()=>{
+      setIsloading(false)
+    }, 10000)
+    clearTimeout(()=>second_timer)
+   }
   return (
     <section id="contact" className="contact">
       <h2 className='contactfont'>Contact</h2>
@@ -74,9 +87,9 @@ const Contact = () => {
       </form>
       </div>
       <div>
-       <h3> {`Name: ${formData.name}`}</h3> 
-       <h3> {`Email: ${formData.email}`}</h3> 
-       <h3> {`Message: ${formData.message}`}</h3> 
+       <h3 style={{display:isloading?"block":"none"}}> {`Name: ${formData.name}`}</h3> 
+       <h3  style={{display:isloading?"block":"none"}}> {`Email: ${formData.email}`}</h3> 
+       <h3  style={{display:isloading?"block":"none"}}> {`Message: ${formData.message}`}</h3> 
       </div>
     </section>
   );

@@ -1,7 +1,7 @@
 
 
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Allnews.css';
 
 const Allnews = () => {
@@ -9,7 +9,7 @@ const Allnews = () => {
   const [newdata, setNewData] = useState([]);
   const [allData, setAllData] = useState([]); 
   const [isloading, setLoading] = useState(false);
-
+  const navigate =useNavigate()
   const dateformat = new Intl.DateTimeFormat("en-US", { year: "numeric", month: "short", day: "numeric" });
 
   useEffect(() => {
@@ -21,6 +21,7 @@ const Allnews = () => {
         setNewData(data.contents); 
       } catch (err) {
         console.error(err);
+        navigate('/404')
       }
     };
     fetchNews();
